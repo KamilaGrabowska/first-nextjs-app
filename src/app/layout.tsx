@@ -1,4 +1,5 @@
 import { Menu } from "@/common/components/Menu";
+import "../styles/global.scss";
 
 export const metadata = {
   title: ' Layout Next.js title',
@@ -14,7 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <Menu />
-      {children}
+      <main className="main-container">
+          {children}
+      </main>
       </body>
     </html>
   )
