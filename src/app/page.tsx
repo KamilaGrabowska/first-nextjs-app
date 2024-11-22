@@ -1,14 +1,13 @@
-import {Menu} from "@/common/components/Menu";
+import {commonMetadata} from "@/common/shared-metadata";
 
 export const metadata = {
-    title: "Main page next.js app",
+    title: `Main page ${commonMetadata.title}`,
     description: "ths is main page",
 }
 
 export default function MainPage() {
     return (
         <div>
-            <Menu />
             <h1>Main Page</h1>
         </div>
     );
